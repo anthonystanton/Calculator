@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#calculator {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#output {
+  display: none;
+}
+
+.numbersInput {
+  display: inline-block;
+  border: 1px solid black;
+  margin: auto;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#enterNumbers {
+  display: flex;
+  padding: 10px;
+}
+
+#instructions ol, #instructions h2 {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#calc-btn, #chosenOperator {
+  padding: 5px;
+  margin: 20px;
+}
+
+#operators {
+  text-align: center;
+}
+
+#output {
+  text-align: center;
+  margin: 20px;
+}
+
+#output p {
+  font-size: 1.5em;
+}
+
+#output span {
+  text-decoration: underline;
+  font-size: 1.6em;
+}
+
+#calc-btn, #chosenOperators {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#calc-btn:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  #enterNumbers {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .numbersInput {
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=Main.css.map */

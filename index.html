@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" text="text/css" href="css/Main.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="Calculator.js"></script>
+</head>
+<body>
+
+    <!--Creating container for the calculator-->
+    <div id="container">
+
+        <!--Calculator div-->
+        <div id="calculator">
+
+            <!--Title for the app-->
+            <header id="header">
+                <h1>Calculator</h1>
+            </header>
+
+            <!--Instructions on how to use the calculator-->
+            <section id="instructions">
+                <h2>How to use:</h2>
+                <ol>
+                    <li>Enter a number in the first and second box</li>
+                    <li>Select the operator you would like to use for calculation</li>
+                    <li>The calculation will appear based on the operator you selected</li>
+                </ol>
+            </section>
+
+            <!--Calucations section-->
+            <section id="calculations">
+                <section id="enterNumbers">
+                    <input id="numberOne" class="numbersInput" type="number" placeholder="Enter first number...">
+                    <input id="numberTwo" class="numbersInput" type="number" placeholder="Enter second number...">
+                </section>
+                <section id="operators">
+                    <Select id="chosenOperator">
+                            <option disabled selected value ="0">Please choose an option</option>
+                            <option value="*">Multiply</option>
+                            <option value="/">Divide</option>
+                            <option value="+">Addition</option>
+                            <option value="-">Subtraction</option>
+                    </Select>
+                    <button id="calc-btn" onclick="operand()">Calculate</button>
+                </section>
+                <section id="output">
+                    <p id="abc">The answer to your calculation is: <span id="answer"></span></p>
+                </section>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
